@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'KLProgressHUD_Example' do
+  pod 'KLProgressHUD', :path => '../'
+
+  target 'KLProgressHUD_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
