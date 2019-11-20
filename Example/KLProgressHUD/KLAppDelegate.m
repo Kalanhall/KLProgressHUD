@@ -7,12 +7,18 @@
 //
 
 #import "KLAppDelegate.h"
+@import KLProgressHUD;
 
 @implementation KLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [self.window makeKeyAndVisible];
+    
+    KLProgressHUD.share.contentColor = UIColor.blackColor;
+    KLProgressHUD.share.backgroundColor = UIColor.whiteColor;
+    
     return YES;
 }
 
