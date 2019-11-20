@@ -28,12 +28,12 @@ NS_ASSUME_NONNULL_BEGIN
 // 菊花
 + (void)showIndicator;
 + (void)showIndicatorTo:(nullable UIView *)view;
+// 透明背景菊花
++ (void)showIndicator:(nullable UIColor *)color;
++ (void)showIndicator:(nullable UIColor *)color to:(nullable UIView *)view;
 // 文本 + 菊花
 + (void)showIndicatorText:(NSString *)text;
 + (void)showIndicatorText:(NSString *)text to:(nullable UIView *)view;
-// 透明背景菊花
-+ (void)showIndicator:(UIColor *)color;
-+ (void)showIndicator:(UIColor *)color to:(nullable UIView *)view;
 // 文本，不设置delay时，默认停留1.5s
 + (void)showText:(NSString *)text;
 + (void)showText:(NSString *)text delay:(NSTimeInterval)time;

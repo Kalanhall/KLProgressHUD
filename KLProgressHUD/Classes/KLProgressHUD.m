@@ -34,12 +34,12 @@
     hud.minSize = CGSizeMake(90, 90);
 }
 
-+ (void)showIndicator:(UIColor *)color
++ (void)showIndicator:(nullable UIColor *)color
 {
     [self showIndicator:color to:nil];
 }
 
-+ (void)showIndicator:(UIColor *)color to:(nullable UIView *)view
++ (void)showIndicator:(nullable UIColor *)color to:(nullable UIView *)view
 {
     if (view == nil) {
         view = UIApplication.sharedApplication.keyWindow;
